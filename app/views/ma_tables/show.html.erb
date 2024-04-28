@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ma_table %>
+
+<div>
+  <%= link_to "Edit this ma table", edit_ma_table_path(@ma_table) %> |
+  <%= link_to "Back to ma tables", ma_tables_path %>
+
+  <%= button_to "Destroy this ma table", @ma_table, method: :delete %>
+  <%= button_to "Générer le PDF", generate_pdf_path, method: :get %>
+
+</div>

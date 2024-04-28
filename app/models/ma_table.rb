@@ -1,0 +1,2 @@
+class MaTable < ApplicationRecord
+end

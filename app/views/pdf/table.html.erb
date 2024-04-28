@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Données de la table</title>
+    <style>
+      /* Styles CSS pour le PDF */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ma tables</h1>
+    
+    <div id="ma_tables">
+      <% @data.each do |ma_table| %>
+        <%= render partial: "ma_table", locals: { ma_table: ma_table } %>
+        <p>
+          <%= link_to "Show this ma table", ma_table_path(ma_table) %>
+        </p>
+      <% end %>
+    </div>
+  </body>
+</html>

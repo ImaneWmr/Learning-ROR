@@ -1,0 +1,2 @@
+module MaTablesHelper
+end
